@@ -87,7 +87,7 @@ function startTimer() {
         let seconds = timeInSeconds % 60;
 
         // Display the time
-        timerElement.innerHTML = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+        timerElement.innerHTML = `Time: ${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
 
         // Check if time is up
         if (timeInSeconds == 0) {
