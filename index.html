@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1st Quiz</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.0/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.0/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.0/dist/contrib/auto-render.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    { left: "$$", right: "$$", display: true },
+                    { left: "$", right: "$", display: false }
+                ]
+            });
+        });
+    </script>
+</head>
+
+<body class="body">
+    <div class="header">
+        <span class="span1">Real Numbers</span>
+        <div class="head-footer">
+            <div class="span2"></div>
+            <div class="timer-container">
+                <div id="timer" class="timer">
+                    Time: 05:00
+                </div> <!-- Timer Display -->
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="quiz-container">
+            <div class="question-cont">
+                Q1. যদি $9^x=27^y$ হয়, তাহলে $x$ এবং $y$ এর মধ্যে সম্পর্ক খুঁজে বের করুন:
+            </div>
+            <div class="option-cont">
+                <label>
+                    <input type="radio" name="question1" value="1">
+                    1. $2x=3y$
+                </label>
+                <label>
+                    <input type="radio" name="question1" value="2">
+                    2. $3x=4y$
+                </label>
+                <label>
+                    <input type="radio" name="question1" value="3">
+                    3. $4x=5y$
+                </label>
+                <label>
+                    <input type="radio" name="question1" value="4">
+                    4. $5x=6y$
+                </label>
+            </div>
+        </div>
+
+        <div class="footer">
+            <button id="submit">Submit</button>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
