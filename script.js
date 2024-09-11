@@ -1,8 +1,23 @@
+const correctAnswers = {
+    question1: "2", 
+    question2: "1",
+    question3: "3",
+    question4: "2",
+    question5: "2",
+    question6: "3",
+    question7: "3",
+    question8: "3",
+    question9: "3",
+    question10: "4",
+    question11: "1",
+    question12: "4",
+    question13: "2",
+    question14: "4",
+};
+
 let interval; // Declare interval globally
 
 function submitfunction() {
-    console.log("Submit button clicked"); // Debugging
-
     timeInSeconds=-1;
     let timer=document.querySelector(".timer-container")
     timer.remove()
@@ -57,26 +72,9 @@ function submitfunction() {
     resultDiv.appendChild(scoreMessage);
 }
 
-const correctAnswers = {
-    question1: "1", 
-    question2: "1",
-    question3: "4",
-    question4: "3",
-    question5: "4",
-    question6: "2",
-    question7: "3",
-    question8: "1",
-    question9: "3",
-    question10: "3",
-    question11: "1",
-    question12: "4",
-    question13: "1",
-    question14: "3",
-    question15: "1",
-};
 
 // Set the starting time for the quiz (in seconds)
-let timeInSeconds = 18000;
+let timeInSeconds = 1800;
 
 function startTimer() {
     const timerElement = document.getElementById('timer');
