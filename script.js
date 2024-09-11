@@ -76,7 +76,7 @@ const correctAnswers = {
 };
 
 // Set the starting time for the quiz (in seconds)
-let timeInSeconds = 10;
+let timeInSeconds = 18000;
 
 function startTimer() {
     const timerElement = document.getElementById('timer');
@@ -87,7 +87,7 @@ function startTimer() {
         let seconds = timeInSeconds % 60;
 
         // Display the time
-        timerElement.innerHTML = `Time: ${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+        timerElement.innerHTML = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
 
         // Check if time is up
         if (timeInSeconds == 0) {
